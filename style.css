@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.para {
+    margin: 2rem;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 700px;
+    max-height: 500px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-grid {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 7%, 48%);
+    grid-column: span 2;
+
+    border-radius: 10px;
+}
+
+.second-grid {
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content-second {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 0 0 2.5rem; */
+}
+
+.third-grid {
+    background-color: hsla(179, 91%, 40%, 0.8);
+    color: hsl(0, 0%, 100%);
+    border-bottom-right-radius: 10px;
+}
+
+.main-para-1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+
+    margin: 2.5rem 0 1rem 2.5rem;
+}
+
+.main-para-2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+
+    margin: 1.5rem 0 1rem 2.5rem;
+}
+
+.main-para-3 {
+    line-height: 1.8rem;
+    margin: 0 5rem 0 2.5rem;
+}
+
+.second-para-1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    margin: 2rem 0 1rem 2.5rem;
+}
+
+/* .second-para-2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+
+    margin: 0 0 1rem 2.5rem;
+}
+
+.second-para-2 span {
+    font-size: 1rem;
+    font-weight: 200;
+
+    margin: 0 2rem 2rem 0;
+} */
+
+.second-grid-para-2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+
+    margin: 0 0 1rem 2.5rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.second-grid-para-2-2 {
+    font-size: 1rem;
+    font-weight: 200;
+
+    margin-top: 0.7rem;
+    margin-left: 0.6rem;
+}
+
+.second-para-3 {
+    font-size: 1.1rem;
+    margin: 0 0 1rem 2.5rem;
+}
+
+.sign-up-button {
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    
+    font-size: 1rem;
+    font-weight: 500;
+
+    width: 77%;
+    height: 3rem;
+    margin: 0.8rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 5px;
+}
+
+.third-para-1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    margin: 2rem 0 0.8rem 2.5rem;
+}
+
+.third-para-2 {
+    font-size: 1rem;
+
+    line-height: 1.5rem;
+    margin: 0 5rem 0 2.5rem;
+}
+
+@media (max-width:800px){
+    
+    .container {
+        width: 325px;
+        margin-top: 4rem;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .main-grid {
+        grid-column: span 2;
+    }
+
+    .second-grid {
+        grid-column: span 2;
+        border-radius: 0px;
+    }
+
+    .second-grid-para-2 {
+        margin: 0 0 1rem 2rem;
+    }
+
+    .main-para-3 {
+        font-size: 14px;
+    }
+
+    .sign-up-button {
+        width: 80%;
+        margin: 0.4rem 2rem 2rem 2rem;
+    }
+
+    .third-grid {
+        grid-column: span 2;
+        border-bottom-left-radius: 10px;
+    }
+
+    .para {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .second-para-3 {
+        font-size: 1rem;
+    }
+
+    .third-para-2 {
+        font-size: 14px;
+        margin: 0 4rem 2rem 2rem;
+    }
+
+    .main-para-1 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    
+    .main-para-2 {
+        font-size: 1rem;
+    }
+
+    .main-para-3 {
+        margin-bottom: 2rem;
+    }
+
+    .attribution {
+        margin-top: 22rem;
+        margin-bottom: 2rem;
+    }
+}
