@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    background-image: fixed;
+    background: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.second-container {
+    width: 55%;
+}
+
+.logo-img {
+    width: 200px;
+    margin: 4rem 0 3rem 4rem;
+}
+
+.mockup-img {
+    min-width: 85%;
+
+    margin: 1.6rem 0 0 4rem;
+}
+
+.third-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: hsl(0, 0%, 100%);
+}
+
+.inner3Container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 4rem 14rem 0 0;
+    gap: 1.5rem;
+}
+
+.para-1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.para-2 {
+    font-size: 1.03rem;
+}
+
+.button-main {
+    width: 180px;
+    height: 55px;
+    border: none;
+
+    font-size: 1.03rem;
+    color: hsl(257, 40%, 49%);
+    font-weight: 500;
+
+    border-radius: 30px;
+}
+
+.button-main:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(300, 69%, 71%);
+}
+
+
+@media (max-width:800px){
+
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-img {
+        width: 150px;
+        margin: 1.5rem 0 2rem 2rem;
+    }
+    
+    .mockup-img {
+        max-width: 60%;
+
+        margin: 1.6rem 2rem 3rem 2rem;
+    }
+
+    .second-container {
+        width: auto;
+    }
+
+    .third-container {
+        width: auto;
+    }
+
+    .para-1 {
+        font-size: 1.5rem;
+    }
+
+    .inner3Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+        padding: 0;
+        margin: 0 2rem 0 2rem;
+        gap: 1.5rem;
+    }
+
+    .attribution {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: .8rem;
+        color: hsl(0, 0%, 100%);
+    }
+}
