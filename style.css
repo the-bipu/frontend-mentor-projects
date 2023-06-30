@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-container {
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.para-1 {
+    font-size: 2.2rem;
+    font-weight: 200;
+
+    margin: 4rem 0 1rem 0;
+}
+
+span {
+    font-weight: 600;
+}
+
+.para-2 {
+    width: 540px;
+    text-align: center;
+}
+
+.second-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+    justify-content: center;
+    margin: 4rem 10rem 2rem 10rem;
+}
+
+.division {
+    background-color: hsl(0, 0%, 100%);
+    width: 350px;
+    height: 250px;
+    border: 2px solid hsl(0, 0%, 98%);
+    margin-bottom: 2rem;
+
+    border-radius: 8px;
+}
+
+.paraSecond {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0 .5rem 2rem;
+}
+
+.paraContent {
+    font-size: .8rem;
+    font-weight: 400;
+    margin: .5rem 3rem 0 2rem;
+}
+
+.card-logo {
+    float: right;
+    margin: 3rem 2rem 2rem 0;
+}
+
+.second-container-1, .second-container-3 {
+    display: flex;
+    align-items: center;
+}
+
+.first-division {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.second-division {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.third-division {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.fourth-division {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+@media(max-width:800px){
+
+    .first-container {
+        text-align: center;
+    }
+
+    .para-1 {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .para-2 {
+        width: 80%;
+    }
+
+    .second-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+
+    .division {
+        width: 310px;
+        height: 250px;
+        margin: 2rem 0 0rem 0;
+    }
+
+    .paraSecond {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 2rem 0 .5rem 2;
+    }
+    
+    .paraContent {
+        font-size: .8rem;
+        font-weight: 400;
+        margin: .5rem 1rem 0 2rem;
+    }
+    
+    .card-logo {
+        float: right;
+        margin: 0;
+        margin: 3rem 2rem 2rem 0;
+    }
+
+    .attribution {
+        font-size: .6rem;
+        font-weight: 600;
+    }
+
+}
