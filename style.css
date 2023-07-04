@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 400px;
+
+    display: grid;
+    height: 110vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 540px 540px;
+}
+
+.containerFirst {
+    grid-row: 1;
+    grid-column: 1 span;
+
+    padding: 0 7rem 0 0;
+}
+
+.containerSecond {
+    grid-row: 1;
+    grid-column: 1 span;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.containerThird {
+    grid-row: 1 span;
+    grid-column: 2 span;
+}
+
+.miniContainer {
+    height: 250px;
+}
+
+.headingFirst {
+    font-size: 3rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+
+.paraFirst {
+    color: hsl(300, 43%, 22%);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+.ratingContainer {
+    height: 55px;
+    width: 420px;
+    background-color: hsl(300, 24%, 96%);
+    
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.ratingContainerFirst {
+    margin-left: 1rem;
+}
+
+.ratingContainerSecond {
+    margin-left: 4rem;
+}
+
+.ratingContainerThird {
+    margin-left: 7rem;
+}
+
+.ratingText {
+    margin-left: 2rem;
+}
+
+.ratingImageStar {
+    margin: 3px;
+}
+
+.firstStar {
+    margin-left: 2rem;
+}
+
+.containerThird {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.cardContainer {
+    width: 340px;
+    height: 220px;
+
+    color: hsl(0, 0, 100%);
+    font-size: 1rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContainerFirst {
+    margin-top: 2rem;
+}
+
+.cardContainerSecond {
+    margin-top: 3.2rem;
+}
+
+.cardContainerThird {
+    margin-top: 4.4rem;
+}
+
+.cardContainerProfile {
+    display: flex;
+    flex-direction: row;
+
+    margin: 2.5rem 0 1rem 2rem;
+}
+
+.personAbout {
+    margin: .2rem 0 .2rem 1.2rem;
+    line-height: 1.2rem;
+}
+
+.cardContainerAbout {
+    line-height: 1.2rem;
+    color: hsl(0, 0%, 100%);
+    margin: .5rem 2rem 2rem 2rem;
+}
+
+.personImage img {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.bioTag {
+    color: hsl(333, 80%, 67%);
+}
+
+.personAbout {
+    color: hsl(0, 0%, 100%);
+}
+
+@media (max-width: 800px){
+
+    body {
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .miniContainer {
+        width: 350px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerFirst {
+        text-align: center;
+
+        padding: 0;
+        margin: 4rem 4rem 2rem 4rem;
+    }
+
+    .headingFirst {
+        font-size: 2.5rem;
+    }
+
+    .containerSecond {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .containerThird {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .ratingContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        margin: 1rem 0 0 0;
+
+        height: 65px;
+        width: 350px;
+    }
+
+    .firstStar {
+        margin: 3px;
+    }
+
+    .ratingText {
+        margin: 0;
+    }
+
+    .cardContainer {
+        margin: 0;
+    }
+
+    .cardContainerFirst {
+        margin-top: 2rem;
+    }
+
+}
