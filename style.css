@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 110vh;
+    height: 100vh;
     
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
@@ -62,6 +62,10 @@ body {
 .mainImage {
     margin-left: -450px;
     margin-top: 100px;
+}
+
+.mobileIllustration {
+    display: none;
 }
 
 .heading {
@@ -125,35 +129,33 @@ body {
 }
 
 @media(max-width:800px) {
+
+    body {
+        height: 120vh;
+    }
     
     .container {
         display: grid;
+        place-content: center;
         grid-template-rows: 1fr 1fr;
+        grid-template-columns: 2fr;
     
         height: 545px;
         width:327px;
-        background-color: hsl(0, 0%, 100%);
-        border-radius: 20px;
-        padding: 0;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .first-container {
         height: 130px;
         width: 327px;
-        grid-area: 1;
+        grid-area: 1 span;
     
-        background: url(./images/illustration-woman-online-mobile.svg), url(./images/bg-pattern-mobile.svg);
-        background-size: 220px 160px, auto;
-        background-repeat: no-repeat, no-repeat;
-        background-position: 50px -60px, 40px -5px;
-        /* background-position: top, top; */
+        background: url(./images/bg-pattern-mobile.svg);
+        background-size: 221px 96px;
+        background-repeat:no-repeat;
+        background-position: 54px -10px;
     
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -162,14 +164,65 @@ body {
         height: 415px;
         width: 327px;
     
-        grid-area: 1;
+        grid-area: 1 span;
     
+        padding: 0;
+        text-align: left;
+
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+
+        display: grid;
+        grid-template-rows: 1fr 5fr;
+        place-content: center;
+    }
+
+    .accordation-div {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+
+        margin: 0;
+        margin-top: -3rem;
+        padding:0 1rem;
+    }
+
+    .mobileIllustration {
+        display: block;
+        width: 216px;
+        height: 164px;
+
+        margin-top: -160px;
+    }
+
+    .mainImage {
+        display: none;
+    }
+
+    .heading {
+        margin: 0;
+        text-align: center;
+    }
+
+    .accordion {
+        padding: 12px 2px 12px 2px;
     
-        padding-right: 60px;
+        border: none;
+        border-bottom: 1.5px solid hsl(240, 5%, 91%);
         text-align: left;
+        outline: none;
+        transition: 0.5s;
+    }
+
+    .accordion:hover {
+        color: hsl(0, 0%, 0%);
+    }
+
+    .active {
+        border-bottom: none;
+        transition: 0.5s ease;
     }
 
 }
