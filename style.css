@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
@@ -45,7 +45,7 @@ body {
 }
 
 .second-container {
-    width: 460px;
+    width: 400px;
     height: 510px;
 
     grid-area: 1 span;
@@ -54,7 +54,7 @@ body {
     flex-direction: column;
     justify-content: center;
 
-    padding-right: 60px;
+    /* padding-right: 60px; */
 
     text-align: left;
 }
@@ -128,7 +128,7 @@ body {
     transition: max-height 0.2s ease-out;
 }
 
-@media(max-width:800px) {
+@media(max-width:995px) {
 
     body {
         height: 120vh;
@@ -225,4 +225,7 @@ body {
         transition: 0.5s ease;
     }
 
+    .attribution {
+        font-size: 0.7rem;
+    }
 }
