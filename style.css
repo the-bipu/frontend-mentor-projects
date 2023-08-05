@@ -18,6 +18,13 @@ body {
     color: hsl(0, 0%, 100%);
 }
 
+.main-div {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container1,
 .container2 {
     position: absolute;
@@ -29,6 +36,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding: 2rem 2rem;
+    border-radius: 30px;
 }
 
 .container2.activeContainer2 {
@@ -36,6 +46,12 @@ body {
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
+
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    padding: 2rem;
 }
 
 .container2 {
@@ -52,44 +68,156 @@ body {
     text-align: center;
     
     background: hsl(214, 17%, 18%);
+    color: hsl(217, 12%, 63%);
+
+    font-size: 1rem;
+    font-weight: 400;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.miniBox:hover {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.activeBox-1 {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
 .con1-div1 {
-    width: 80%;
+    width: 100%;
+    margin: 0 0 1.5rem 0;
 }
 
 .con1-div2 {
-    width: 80%;
+    width: 100%;
+    margin: 0 0 1.5rem 0;
 }
 
 .con1-div3 {
-    width: 80%;
+    width: 100%;
     color: hsl(217, 12%, 63%);
+
+    margin: 0 0 1.5rem 0;
 }
 
 .con1-div4 {
-    width: 80%;
+    width: 100%;
     color: hsl(216, 12%, 54%);
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    gap: 1.1rem;
+
+    margin: 0 0 1.5rem 0;
 }
 
 .con1-div5 {
-    width: 80%;
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .submit_button {
+    background: hsl(25, 97%, 53%);
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
     height: 40px;
     width: 100%;
     cursor: pointer;
+
+    border-radius: 50px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+
+    display: grid;
+    place-content: center;
+}
+
+.submit_button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.con2-div1 {
+    margin: 0 0 1.5rem 0;
+}
+
+.con2-div2 {
+    width: auto;
+    margin: 0 0 1.5rem 0;
+
+    display: grid;
+    place-content: center;
+}
+
+.con2-div2-1 {
+    background-color: hsl(214, 17%, 18%);
+    color: hsl(25, 97%, 53%);
+    height: 30px;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.8rem;
+    border-radius: 20px;
+}
+
+.con2-para1 {
+    margin: 0 3px;
+}
+
+.con2-div3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1.2rem 0;
+}
+
+.con2-div4 {
+    color: hsl(216, 12%, 54%);
+}
+
+@media(max-width:800px) {
+
+    .container1,
+    .container2 {
+        height: 400px;
+        width: 350px;
+
+        padding: 1.5rem 1.5rem;
+    }
+
+    .container2.activeContainer2 {
+        padding: 1.5rem;
+    }
+
+    .con1-div1 {
+        margin: 0 0 1.4rem 0;
+    }
+    
+    .con1-div2 {
+        margin: 0 0 1.4rem 0;
+    }
+    
+    .con1-div3 {
+        margin: 0 0 1.4rem 0;
+    }
+    
+    .con1-div4 {
+        gap: 5px;
+        margin: 0 0 1.4rem 0;
+    }
+
 }
