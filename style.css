@@ -137,9 +137,15 @@ body {
 
 @media(max-width:1100px) {
 
+    .mainDiv {
+        height: auto;
+    }
+
     .Container {
         grid-template-columns: 237px 237px 237px; 
         grid-template-rows: 262px 247px 247px;
+
+        margin: 3rem 0 3rem 0;
     }
 
     .con1-div5 {
