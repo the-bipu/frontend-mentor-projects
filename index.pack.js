@@ -582,7 +582,7 @@ function Footer() {
             ". Coded by ",
             _react2.default.createElement(
                 "a",
-                { href: "#" },
+                { href: "https://github.com/the-bipu" },
                 "The-Bipu"
             ),
             "."
