@@ -19,8 +19,9 @@ body {
 
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
-    visibility: hidden;
+    text-align: center;
+    color: hsl(0, 10%, 100%);
+    margin-top: 2rem;
 }
 
 .attribution a { 
@@ -118,14 +119,17 @@ body {
     font-weight: 500;
 
     padding-left: 2rem;
-    border: 1px solid hsl(246, 25%, 77%);
     border-radius: 5px;
 
     outline: none;
     margin-bottom: 5px;
 }
 
-input[type=text]:focus {
+.border-style {
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.con2-Input:focus {
     border: 1px solid hsl(248, 32%, 49%);
 }
 
@@ -140,23 +144,21 @@ input[type=text]:focus {
     font-style: italic;
 }
 
-.w-1 {
-    display: none;
-}
-
-.w-2 {
-    display: none;
-}
-
-.w-3 {
-    display: none;
-}
-
+.w-1,
+.w-2,
+.w-3,
 .w-4 {
     display: none;
 }
 
-.warningBorder {
+.w-1-change,
+.w-2-change ,
+.w-3-change ,
+.w-4-change  {
+    display: block;
+}
+
+.warningBorder.con2-Input {
     border: 2px solid hsl(0, 100%, 74%);
 }
 
@@ -181,7 +183,6 @@ input[type=text]:focus {
 
     border: none;
     border-radius: 5px;
-
     margin-bottom: 15px;
 }
 
