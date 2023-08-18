@@ -61,9 +61,15 @@ export default function Main () {
         }
     }
 
-    function MessageBox () {
+    function handleSubmission(){
         if (fname!="" && lname!="" && email!="" && password!="") {
-            window.alert("Logged In!")
+            window.location.reload();
+            window.alert("You're now logged in! 🤖");
+        }
+
+        if (fname=="" || lname=="" || email=="" || password=="") {
+            window.location.reload();
+            window.alert("You must fill the form first! 🥲");
         }
     }
 
@@ -115,7 +121,7 @@ export default function Main () {
                         <div className={`warningDiv w-4 ${isValidPassword ? "" : "wrongInput w-3-change"}`}>Password cannot be empty</div>
                     </div>
 
-                    <button type="submit" onClick={MessageBox}>Claim your free trial</button>
+                    <button type="submit" onClick={handleSubmission}>Claim your free trial</button>
                     <p className="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
                 </div>
 

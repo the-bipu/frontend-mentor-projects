@@ -104,6 +104,14 @@ body {
     justify-content: center;
 }
 
+.con1-div-3 {
+    display: none;
+}
+
+.con1-div-3.show_new_div {
+    display: block;
+}
+
 .con1-div2-2-1 {
     width: 100%;
     margin-bottom: 15px;
