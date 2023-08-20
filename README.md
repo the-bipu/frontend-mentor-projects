@@ -44,7 +44,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/the-bipu/Sign-Up-Form-Component]
-- Live Site URL: [https://sign-up-form-intro-component.netlify.app/]
+- Live Site URL: [https://signup-intro-component.netlify.app/]
 
 ## My process
 
