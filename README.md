@@ -17,9 +17,6 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -66,7 +63,3 @@ This project is now complete as per the given requirements and now i would like 
 
 - Github - [The-Bipu](https://github.com/the-bipu)
 - Frontend Mentor - [@the-bipu](https://www.frontendmentor.io/profile/the-bipu)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.

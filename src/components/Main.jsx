@@ -8,6 +8,7 @@ export default function Main() {
 
     const mailRegex = /^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/;
 
+    // handle the change in email field
     const handleEmailChange = (event) => {
         const newEmail = event.target.value;
         setEmail(newEmail);
@@ -18,6 +19,19 @@ export default function Main() {
         setIsValidEmail(false);
         }
     };
+
+    // handle the task after submission
+    function handleSubmission(){
+        if (email=="") {
+            window.location.reload();
+            window.alert("You must fill the email first! 🥲");
+        }
+
+        if (email!="") {
+            window.location.reload();
+            window.alert("We'll notify you when the site is live! 🤖");
+        }
+    }
 
     return (
         <div className="main--Div" role="main">
@@ -40,7 +54,7 @@ export default function Main() {
                     {!isValidEmail && (<p className="error-msg">Please provide a valid email address</p>)}
                 </div>
 
-                <button class="notify--Button">Notify Me</button>
+                <button class="notify--Button" onClick={handleSubmission}>Notify Me</button>
                 
                 <div class="desktop-warning">
                     {!isValidEmail && (<p className="error-msg">Please provide a valid email address</p>)}
