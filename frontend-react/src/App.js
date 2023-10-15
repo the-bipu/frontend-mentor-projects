@@ -1,10 +1,12 @@
 import React from 'react';
+
+import { Home } from './container';
 import './App.scss';
 
 function App() {
   return (
     <div>
-
+      <Home />
     </div>
   );
 }
