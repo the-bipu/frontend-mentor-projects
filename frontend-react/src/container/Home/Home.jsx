@@ -7,7 +7,11 @@ const Home = () => {
   const [selectedBackground, setSelectedBackground] = useState(0);
   const [selectedContent, setSelectedContent] = useState(0);
 
-  const backgroundOptions = ['url(../../assets/images/desktop-image-hero-1.jpg)', images.desktopHeroI2, images.desktopHeroI3];
+  const backgroundOptions = [
+    'url(https://roomhomepage-assetstore.netlify.app/static/media/desktop-image-hero-1.91901d0d47ea68db9434.jpg)', 
+    'url(https://roomhomepage-assetstore.netlify.app/static/media/desktop-image-hero-2.9d35405672f4fca67945.jpg)', 
+    'url(https://roomhomepage-assetstore.netlify.app/static/media/desktop-image-hero-3.05fd679aa0d31e01c176.jpg)'
+  ];
   // const backgroundOptions = [
   //   'pink',
   //   'red', 
@@ -21,7 +25,7 @@ const Home = () => {
   ];
 
   const changeLeft = () => {
-    console.log("1st background changed !!")
+    console.log("1st background changed !!");
     setSelectedBackground((prevBackground) => (prevBackground - 1 + backgroundOptions.length) % backgroundOptions.length);
     setSelectedContent((prevContent) => (prevContent - 1 + contentOptions.length) % contentOptions.length);
   };
@@ -51,7 +55,7 @@ const Home = () => {
       </div>
 
       <div className="main__div-content">
-        <div className="main__div-contentCons">
+        <div className={`main__div-contentCons `}>
           <div className="main__div-content-heading">
             {currentContent.heading}
           </div>
@@ -74,26 +78,6 @@ const Home = () => {
           </button>
         </div>
       </div>
-
-      {/* <div class="main__div-content">
-        We are available all across the globe
-
-        With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-        Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-        store locator. Any questions? Don't hesitate to contact us today.
-
-        Shop now
-      </div>
-
-      <div class="main__div-content">
-        Manufactured with the best materials
-
-        Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-        to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-        experience in this industry, we understand what customers want for their home and office.
-
-        Shop now
-      </div> */}
 
       <div className="mini__div-image1">
         <img src={images.aboutDark} alt="" />
