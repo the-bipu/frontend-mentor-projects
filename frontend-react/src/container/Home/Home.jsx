@@ -12,11 +12,6 @@ const Home = () => {
     'url(https://roomhomepage-assetstore.netlify.app/static/media/desktop-image-hero-2.9d35405672f4fca67945.jpg)', 
     'url(https://roomhomepage-assetstore.netlify.app/static/media/desktop-image-hero-3.05fd679aa0d31e01c176.jpg)'
   ];
-  // const backgroundOptions = [
-  //   'pink',
-  //   'red', 
-  //   'orange'
-  // ];
 
   const contentOptions = [
     { heading: "Discover innovative ways to decorate", para: "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love." },
@@ -43,7 +38,7 @@ const Home = () => {
       <div className="main__div-nav" style={{ background: backgroundOptions[selectedBackground] }}>
           <div className="nav">
             <div className="nav-head">
-              Room
+              <img src={images.logo} alt="" />
             </div>
             <div className="nav-itemCon">
               <div className="nav-items">Home</div>
@@ -100,8 +95,8 @@ const Home = () => {
       </div>
       
       <div className="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">The Bipu</a>.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/the-bipu">The Bipu</a>.
       </div>
     </div>
   )
