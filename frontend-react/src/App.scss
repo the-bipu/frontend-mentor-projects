@@ -13,8 +13,8 @@ $--dark-gray: hsl(0, 0%, 63%);
 $--dark-gray-high: hsl(0, 0%, 27%);
 
 body {
-    width: 1440px;
-    height: 800px;
+    width: 100vw;
+    height: auto;
     font: 100% $font-stack;
     color: $--dark-gray;
     background-color: $primary-color;
