@@ -8,9 +8,9 @@ const Home = () => {
   const [selectedContent, setSelectedContent] = useState(0);
 
   const backgroundOptions = [
-    'url(https://roomhomepage-assetstore.netlify.app/static/media/desktop-image-hero-1.91901d0d47ea68db9434.jpg)', 
-    'url(https://roomhomepage-assetstore.netlify.app/static/media/desktop-image-hero-2.9d35405672f4fca67945.jpg)', 
-    'url(https://roomhomepage-assetstore.netlify.app/static/media/desktop-image-hero-3.05fd679aa0d31e01c176.jpg)'
+    `url(${images.desktopHeroI1})`,
+    `url(${images.desktopHeroI2})`, 
+    `url(${images.desktopHeroI3})`, 
   ];
 
   const contentOptions = [
