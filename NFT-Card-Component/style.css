@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+
+    background-color: hsl(217, 54%, 11%);
+
+    height: 100vh;
+    display: grid;
+
+    place-content: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    height: 595px;
+    width: 350px;
+
+    border-radius: 10px;
+}
+
+.mainImageContainer {
+    width: 350px;
+    height: 350px;
+
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+}
+
+.mainImage {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.mainImageOriginal {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.overlay {
+    background-color: hsla(178, 100%, 50%, 50%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainImage:hover .overlay {
+    opacity: 1;
+}
+
+.contentContainer {
+    height: 245px;
+    width: 350px;
+
+    padding: 0 25px 25px 25px;
+}
+
+.mainHeading {
+    font-weight: 600;
+    color: hsl(0, 0, 100%);
+    margin-bottom: 1rem;
+}
+
+.mainHeading:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.contentBrief {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.timeContainer {
+    font-size: 17px;
+    height: 50px;
+    width: 100%;
+    
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.priceTag {
+    float: left;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeTag {
+    float: right;
+    font-size: 15px;
+    font-weight: 300;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authorSection {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 1.5rem;
+}
+
+.avatarImageDivision {
+    width: 40px;
+    height: 40px;
+    color: hsl(0, 0, 100%);
+    border-radius: 50%;
+
+    border: 2px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarImage {
+    width: 35px;
+    height: 35px;
+}
+
+.avatarAbout {
+    font-size: 17px;
+    font-weight: 300;
+
+    display: flex;
+    align-items: center;
+
+    margin-left: 20px;
+}
+
+.authorSpan {
+    color: white;
+}
+
+.authorSpan:hover {
+    color: hsl(178, 100%, 50%);
+}
