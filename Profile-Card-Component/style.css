@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: -250px -500px, 750px 420px;
+    background-repeat: no-repeat, no-repeat;
+
+    display: grid;
+    height: 100vh;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 350px;
+    height: 400px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-container {
+    height: 200px;
+    width: 100%;
+}
+
+.firstConbg {
+    height: 140px;
+    width: 100%;
+
+    border-radius: 20px 20px 0 0;
+}
+
+.second-container {
+    height: 230px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondConp {
+    height: 120px;
+    width: 120px;
+
+    border: 5px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+
+    margin-top: -270px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+
+    margin-top: 1rem;
+    margin-bottom: .6rem;
+}
+
+span {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.place {
+    font-size: 14px;
+    margin-bottom: 2rem;
+
+    color: hsl(0, 0%, 59%);
+}
+
+.rating {
+    border-top: 1px solid hsla(0, 0%, 59%, 30%);
+    height: 90px;
+    width: 350px;
+    margin-bottom: -9.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.paraRating {
+    font-size: 18px;
+    font-weight: 700;
+
+    color: hsl(229, 23%, 23%);
+
+    margin: 1.8rem 1.6rem 1.4rem 1.6rem;
+    text-align: center;
+}
+
+.ratingSpan {
+    font-size: 13px;
+}
+
+@media (max-width:800px) {
+
+    body {
+        background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+        background-position: -750px -600px, 170px 230px;
+    }
+
+    .container {
+        width: 320px;
+    }
+
+    .first-container {
+        width: 320px;
+    }
+
+    .second-container {
+        width: 320px;
+    }
+
+    .paraRating {
+        margin: 1.8rem 1rem 1rem 1rem;
+    }
+
+}
