@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+    display: grid;
+    place-content: center;
+    
+    background: rgb(175,103,233);
+    background: linear-gradient(180deg, rgba(175,103,233,1) 31%, rgba(101,101,231,1) 100%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 510px;
+    width: 920px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 0;
+}
+
+.first-container {
+    width: 460px;
+    height: 510px;
+    grid-area: 1 span;
+
+    background: url(./images/illustration-woman-online-desktop.svg), url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -70px 80px, -570px -290px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-container {
+    width: 400px;
+    height: 510px;
+
+    grid-area: 1 span;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* padding-right: 60px; */
+
+    text-align: left;
+}
+
+.mainImage {
+    margin-left: -450px;
+    margin-top: 100px;
+}
+
+.mobileIllustration {
+    display: none;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin-bottom: 1.4rem;
+}
+
+.accordation-div {
+    margin: 0 50px 0 0;
+}
+
+.accordion {
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(237, 12%, 33%);
+    cursor: pointer;
+    padding: 13px 15px 15px 0;
+
+    border: none;
+    border-bottom: 1.5px solid hsl(240, 5%, 91%);
+    text-align: left;
+    outline: none;
+    transition: 0.5s;
+}
+
+.accordion:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.active {
+    border-bottom: none;
+    transition: 0.5s ease;
+    font-weight: 700;
+}
+
+.accordion:after {
+    content: url(./images/icon-arrow-down.svg);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: url(./images/icon-arrow-down.svg);
+    transform: rotate(180deg);
+    transition: 0.5s ease;
+}
+
+.panel {
+    color: hsl(237, 12%, 33%);
+    padding: 5px 10px 0 0;
+    background-color: white;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+@media(max-width:995px) {
+
+    body {
+        height: 120vh;
+    }
+    
+    .container {
+        display: grid;
+        place-content: center;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 2fr;
+    
+        height: 545px;
+        width:327px;
+    }
+
+    .first-container {
+        height: 130px;
+        width: 327px;
+        grid-area: 1 span;
+    
+        background: url(./images/bg-pattern-mobile.svg);
+        background-size: 221px 96px;
+        background-repeat:no-repeat;
+        background-position: 54px -10px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .second-container {
+        height: 415px;
+        width: 327px;
+    
+        grid-area: 1 span;
+    
+        padding: 0;
+        text-align: left;
+
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+
+        display: grid;
+        grid-template-rows: 1fr 5fr;
+        place-content: center;
+    }
+
+    .accordation-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        margin-top: -3rem;
+        padding:0 1rem;
+    }
+
+    .mobileIllustration {
+        display: block;
+        width: 216px;
+        height: 164px;
+
+        margin-top: -160px;
+    }
+
+    .mainImage {
+        display: none;
+    }
+
+    .heading {
+        margin: 0;
+        text-align: center;
+    }
+
+    .accordion {
+        padding: 12px 2px 12px 2px;
+    
+        border: none;
+        border-bottom: 1.5px solid hsl(240, 5%, 91%);
+        text-align: left;
+        outline: none;
+        transition: 0.5s;
+    }
+
+    .accordion:hover {
+        color: hsl(0, 0%, 0%);
+    }
+
+    .active {
+        border-bottom: none;
+        transition: 0.5s ease;
+    }
+
+    .attribution {
+        font-size: 0.7rem;
+    }
+}

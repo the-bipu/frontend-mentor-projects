@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { color: hsl(0, 0%, 100%); font-size: 11px; text-align: center; margin-top: 1rem; font-size: 1rem;}
+    .attribution a { color: antiquewhite; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="first-container">
+      <img src="./images/illustration-box-desktop.svg" alt="" class="mainImage">
+      <img src="./images/illustration-woman-online-mobile.svg" alt="" class="mobileIllustration">
+    </div>
+    
+    <div class="second-container">
+      <div class="heading">FAQ</div>
+      <div class="accordation-div">
+
+        <button class="accordion">How many team members can I invite?</button>
+        <div class="panel hide">
+          <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.</p>
+        </div>
+        
+        <button class="accordion">What is the maximum file upload size?</button>
+        <div class="panel hide">
+          <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </div>
+        
+        <button class="accordion">How do I reset my password?</button>
+        <div class="panel hide">
+          <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.</p>
+        </div>
+
+        <button class="accordion">Can I cancel my subscription?</button>
+        <div class="panel hide">
+          <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </div>
+
+        <button class="accordion">Do you provide additional support?</button>
+        <div class="panel hide">
+          <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/the-bipu">The-Bipu</a>.
+  </div>
+
+  <script src="./script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+</html>
