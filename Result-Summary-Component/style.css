@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(221, 100%, 96%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+#container-main {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 510px;
+    width: 734px;
+    align-items: center;
+    margin: 10% auto;
+}
+
+.container-one {
+    background: rgb(46,43,233);
+    background: linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(120,87,255,1) 100%);
+    border-radius: 20px;
+    height: 510px;
+    width: 367px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.container-two {
+    background-color: hsl(0, 0%, 100%);
+    height: 510px;
+    width: 367px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.para-1 {
+    color: hsl(241, 100%, 89%);
+    font-size: 22px;
+    margin: 42px 0 39px 0;
+    font-weight: 600;
+}
+
+.circle {
+    background: rgb(78,33,202);
+    background: linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0) 100%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+    font-size: 80px;
+    text-align: center;
+}
+
+.para-num {
+    margin-top: 15%;
+    font-weight: 800;
+}
+
+.para-span {
+    color: hsl(241, 100%, 89%);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.para-2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 35px 0 15px 0;
+}
+
+.para-3 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-weight: 300;
+    margin: 0 55px 0 55px;
+}
+
+.para-4 {
+    color: hsl(224, 30%, 27%);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 43px;
+    margin-left: 40px;
+}
+
+.container-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.label-1 {
+    background-color: hsla(0, 100%, 67%, 0.1);
+    border-radius: 12px;
+    height: 54px;
+    width: 286px;
+    margin: 33px 0 9px 0;
+}
+
+.label-2 {
+    background-color: hsla(39, 100%, 56%, 0.1);
+    border-radius: 12px;
+    height: 54px;
+    width: 286px;
+    margin: 9px;
+}
+
+.label-3 {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    border-radius: 12px;
+    height: 54px;
+    width: 286px;
+    margin: 9px;
+}
+
+.label-4 {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    border-radius: 12px;
+    height: 54px;
+    width: 286px;
+    margin: 9px 0 14px 0;
+}
+
+.label-1 p,
+.label-2 p,
+.label-3 p,
+.label-4 p {
+    margin-top: 14px;
+}
+
+.main-span-1 {
+    color: hsla(0, 100%, 67%, 1);
+}
+
+.main-span-2 {
+    color: hsla(39, 100%, 56%, 1);
+}
+
+.main-span-3 {
+    color: hsla(166, 100%, 37%, 1);
+}
+
+.main-span-4 {
+    color: hsla(234, 85%, 45%, 1);
+}
+
+.label-1 img,
+.label-2 img,
+.label-3 img,
+.label-4 img {
+    margin-bottom: -4px;
+    margin-left: 15px;
+}
+
+.label-1 .first-span,
+.label-2 .first-span,
+.label-3 .first-span,
+.label-4 .first-span {
+    margin-right: 15px;
+    float: right;
+}
+
+.label-1 .second-span,
+.label-2 .second-span,
+.label-3 .second-span,
+.label-4 .second-span {
+    /* color: hsl(241, 100%, 89%); */
+    color: hsla(224, 30%, 27%, 0.7);
+}
+
+.button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.continue-button {
+    background-color: hsl(224, 30%, 27%);
+    border: 1px solid hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    width: 286px;
+    height: 54px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-top: 26px;
+}
+
+/* The media query section starts from here */
+
+@media (max-width:800px){
+
+    #container-main {
+        display: flex;
+        flex-direction: column;
+        height: 809px;
+        width: 375px;
+        align-items: center;
+        margin: 10% auto;
+    }
+
+    .container-one {
+        border-radius: 0 0 20px 20px;
+        height: 354px;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .container-two {
+        border-radius: 0;
+        height: 455px;
+        width: 375px;
+    }
+
+    
+    .para-1 {
+        font-size: 22px;
+        margin: 27px 0 27px 0;
+    }
+
+    .circle {
+        height: 140px;
+        width: 140px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .para-num {
+        margin-top: 16%;
+        font-weight: 800;
+    }
+
+    .para-span {
+        color: hsl(241, 100%, 89%);
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .para-2 {
+        font-size: 23px;
+        font-weight: 700;
+        margin: 27px 0 10px 0;
+    }
+
+    .para-3 {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0 50px 0 50px;
+    }
+
+    /* second div */
+
+    .para-4 {
+        font-size: 20px;
+        margin-top: 28px;
+        margin-left: 44px;
+    }
+
+    .label-1 {
+        height: 54px;
+        width: 312px;
+        margin: 28px 0 7px 0;
+    }
+
+    .label-2 {
+        height: 54px;
+        width: 312px;
+        margin: 7px;
+    }
+
+    .label-3 {
+        height: 54px;
+        width: 312px;
+        margin: 7px;
+    }
+
+    .label-4 {
+        height: 54px;
+        width: 312px;
+        margin: 7px 0 10px 0;
+    }
+
+    .continue-button {
+        width: 312px;
+        height: 54px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 50px;
+        margin-top: 22px;
+    }
+
+}
