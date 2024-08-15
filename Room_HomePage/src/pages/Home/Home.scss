@@ -8,102 +8,21 @@
   color: hsl(228, 45%, 44%);
 }
 
-.main__div {
-  width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: row;
-
-  .inner__mainDiv {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .inner__divSecond {
-    display: flex;
-    flex-direction: row;
-
-    .mini__div-image1 {
-      width: 30%;
-    }
-  }
-}
-
-.main__div-nav {
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.main__div-content {
-  background: rgb(255, 255, 255);
-
-  .main__div-contentCons {
-    width: 100%;
-    padding: 8rem 5rem;
-
-    .animate {
-      animation: fadeItems 0.5s;
-    }
-
-    @keyframes fadeItems {
-      0% {
-        opacity: 0;
-        transform: translate(20px) scale(0.9);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translate(0px) scale(1);
-      }
-    }
-  }
-}
-
-.mini__div-content {
-  padding: 3rem;
-  min-height: 300px;
-
-  .mini__div-content-heading {
-    font-size: 1.2rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    margin-bottom: 1.7rem;
-
-    color: black;
-  }
-
-  .mini__div-content-para {
-    font-size: 16px;
-    color: hsl(0, 0%, 63%);
-    line-height: 1.2rem;
-  }
-}
-
 .bg-aboutDark {
   background-image: url(../../assets/images/image-about-dark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 300px;
+  min-height: 270px;
 }
 
 .bg-aboutLight {
   background-image: url(../../assets/images/image-about-light.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 300px;
+  min-height: 270px;
 }
 
 .arrowDiv {
-  width: 160px;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-
-  background-color: black;
-
   .firstArrow {
     width: 80px;
     height: 80px;
@@ -144,31 +63,11 @@
 }
 
 .navbar {
-  width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-transform: lowercase;
-  gap: 2.2rem;
-
-  color: white;
-
-  padding-top: 50px;
-  padding-left: 60px;
-
   .navbar-head {
     font-size: 2.2rem;
   }
 
   .nav-items {
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1.6rem;
-
     .nav-item {
       display: inline-block;
       position: relative;
